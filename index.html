@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwarko</title>
+    <!-- Link for CSS Styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <button class="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+     
+        <nav class="hidden">
+            <ul>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Home Loans</a></li>
+                <li><a href="#">Agent Finder</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="icons/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="hidden"><a href="#">Manage Rentals</a></li>
+                <li class="hidden"><a href="#">Advertise</a></li>
+                <li class="hidden"><a href="#">Help</a></li>
+                <li><a href="login.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Navigation bar  for mobile -->
+    <nav>
+        <ul class="nav-for-mobile">
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Home Loans</a></li>
+            <li><a href="#">Agent Finder</a></li>
+            <li><a href="#">Manage Rentals</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- The main section -->
+    <main>
+        <section class="hero">
+            <div class="search-bar-container">
+                <input type="text" name="search-box" id="search-box" placeholder="Enter address or location" size="35">
+                <button class="search-btn">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-recommendations">
+
+                <div class="text-section">
+                    <h2> Get home recommendations</h2>
+                    <p>Sign in for a more personalized experience.</p>
+                    <button class="signin-button" onclick="window.location.href='signup.html';">Sign In</button>
+                </div>
+
+                <div class="image-container">
+                    <img src="images/01.jpg" class="fade-image" alt="Recommendation 1">
+                    <img src="images/02.jpg" class="fade-image" alt="Recommendation 2">
+                    <img src="images/04.jpg" class="fade-image" alt="Recommendation 3">
+                </div>
+            </div>
+
+        </section>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="icons/Buy_a_home.webp" alt="Buy a home">
+                <div class="card-content">
+                    <h3>Buy a home</h3>
+                    <p>The most listings, including things you won't find anywhere else.</p>
+                    <a href="#" class="button">Browse homes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="icons/Sell_a_home.webp" alt="Sell a home">
+                <div class="card-content">
+                    <h3>Sell a home</h3>
+                    <p>Unlock the potential of your dream home.</p>
+                    <a href="#" class="button">See your options</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="icons/Rent_a_home.webp" alt="Rent a home">
+                <div class="card-content">
+                    <h3>Rent a home</h3>
+                    <p>Discover the perfect rental for your lifestyle.</p>
+                    <a href="#" class="button">Find rentals</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Add other sections and content here -->
+    </main>
+
+    <!-- Footer section  -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy;<span id="currentYear"></span> Kwarko. All rights reserved.</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
