@@ -28,10 +28,10 @@ body{
 .title{
     text-align: center;
     margin-bottom: 10px;
-    text-transform: uppercase ;
+    text-transform: none ;
     color:#0070BB;
     font-family: sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .input-field{
