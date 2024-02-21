@@ -7,7 +7,6 @@
 body{
     width: 100%;
     height: 100vh;
-   /*  background-color: #E5E7E6; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +17,7 @@ body{
 }
 
 .form-container{
-   max-width: 400px;
+    max-width: 400px;
     padding:30px;
     border-radius: 8px;
     background-color: #fff;
@@ -102,4 +101,14 @@ input::placeholder{
 
 .form-container p a:hover{
     text-decoration: underline;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .form-container {
+        max-width: 80%; /* Adjust the width for smaller screens */
+    }
+    .btn-container input[type="submit"] {
+        padding: 10px 60px; /* Adjust button padding for smaller screens */
+    }
 }
