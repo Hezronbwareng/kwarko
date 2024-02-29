@@ -90,7 +90,7 @@ nav ul li a:hover {
     justify-content: center;
     background-size: cover;
     background-position: center;
-    background-image: url('images/backround.jpg');
+    background-image: url('/images/backround.jpg');
 }
 
 /* Styling the search bar and its container */
