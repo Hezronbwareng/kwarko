@@ -153,6 +153,24 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 
+/* Style for success message */
+.success-message {
+    background-color: #dff0d8; /* Greenish background */
+    color: #3c763d; /* Dark green text */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d0e9c6; /* Light green border */
+}
+
+/* Style for error message */
+.error-message {
+    background-color: #f2dede; /* Reddish background */
+    color: #a94442; /* Dark red text */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ebccd1; /* Light red border */
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE */
 @media screen and (max-width: 768px) {
     .form-section {
