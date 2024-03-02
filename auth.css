@@ -1,7 +1,7 @@
-
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
     box-sizing: border-box;
 }
 
@@ -10,12 +10,15 @@ a {
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
+    font-family: serif;
 }
+
 
 .main {
     width: 100%;
+    overflow: hidden;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -46,7 +49,7 @@ body {
 .go-back a i {
     position: absolute;
     top: 50%;
-    left: -20px; /* Adjust as needed */
+    left: -20px;
     transform: translateY(-50%);
     color: #365f98;
 }
@@ -63,26 +66,19 @@ body {
     text-transform: uppercase;
     font-size: 32px;
 }
- label{
+
+.input-wrapper {
+    margin-bottom: 20px;
+}
+
+label{
     color: #635c5c;
 }
 
 .input-div {
     position: relative;
-    margin-bottom: 5px;
+    margin-top: 2px;
 }
-.input-wrapper {
-    margin-bottom: 10px;
-}
-
-.input-error {
-    display:none;
-    border-radius: 5px;
-    padding:5px;
-    color: #FF0800;
-    font-size: 14px;
-}
-
 
 .input-div input {
     width: 100%;
@@ -93,12 +89,26 @@ body {
     font-size: 14px;
 }
 
+.input-div input:focus{
+    border: 2px solid #000;
+}
+
 .input-div i {
     position: absolute;
     top: 50%;
     right: 10px;
+    cursor: pointer;
     transform: translateY(-50%);
     color: #1B1B1B;
+}
+
+.input-error {
+    display:block;
+    height:10px ;
+    border-radius: 5px;
+    padding:5px;
+    color: #FF0800;
+    font-size: 12px;
 }
 
 .submitBtn-container {
@@ -137,7 +147,7 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 
-/* Media Queries */
+/* RESPONSIVE DESIGN FOR MOBILE */
 @media screen and (max-width: 768px) {
     .form-section {
         max-width: 325px;
@@ -168,7 +178,7 @@ input[type="submit"]:hover {
 
     .submitBtn-container{
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     input[type="submit"] {
@@ -176,6 +186,6 @@ input[type="submit"]:hover {
     }
 
     .login-statement {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
