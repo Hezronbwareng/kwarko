@@ -51,11 +51,14 @@ body {
     top: 50%;
     left: -20px;
     transform: translateY(-50%);
-    color: #365f98;
+    color: #ed4c06;
 }
 
 .go-back p {
     margin: 0;
+}
+.go-back p span{
+    color: #ed4c06;
 }
 
 .form-title {
@@ -69,6 +72,9 @@ body {
 
 .input-wrapper {
     margin-bottom: 20px;
+}
+.input-wrapper  span{
+    color: #FF0800;
 }
 
 label{
