@@ -9,9 +9,6 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="auth.css">
 
-    <!-- JS link -->
-    <script src="signup.js"></script>
-
     <!-- Font awesome icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -19,11 +16,11 @@
 <body>
     <main class="main">
         <section class="form-section">
-            <form action="#" method="POST" id="register-form">
+            <form method="POST" id="register-form">
 
                 <div class="go-back">
                     <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-                    <a href="index.html">  <p> Go Back</p></a>
+                    <p>Go Back</p>
                 </div>
             
                 <div class="input-container">
@@ -35,29 +32,29 @@
                             <input type="email" name="email" id="email" />
                             <i class="fa-solid fa-envelope"></i>
                         </div>
-                        <p class="input-error" id="email-error">This field cannot be left blank</p>
+                        <p class="input-error" id="email-error"></p>
                     </div>
             
                     <div class="input-wrapper">
                         <label for="password">Password *</label>
                         <div class="input-div">
                             <input type="password" name="password" id="password" >
-                            <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+                            <i class="fa-solid fa-eye-slash" ></i>
                         </div>
-                        <p class="input-error" id="password-error">This field cannot be left blank</p>
+                        <p class="input-error" id="password-error"></p>
                     </div>
             
                     <div class="input-wrapper">
                         <label for="confirm-password">Confirm Password *</label>
                         <div class="input-div">
                             <input type="password" name="confirm-password" id="confirm-password">
-                            <i class="fa-solid fa-eye-slash" id="toggleConfirmPassword"></i>
+                            <i class="fa-solid fa-eye-slash" ></i>
                         </div>
-                        <p class="input-error" id="confirm-password-error">This field cannot be left blank</p>
+                        <p class="input-error" id="confirm-password-error"></p>
                     </div>
             
                     <div class="submitBtn-container">
-                        <input type="submit" value="Create Account">
+                        <input type="submit" value="Create Account" formaction="https://nyumba-api.onrender.com/api/users/register/">
                     </div>
             
                     <div class="login-statement">
@@ -68,31 +65,9 @@
             
         </section>
     </main>
-     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    const passwordInput = document.getElementById('password');
-    const togglePasswordButton = document.getElementById('togglePassword');
-    
-    const confirmPasswordInput = document.getElementById('confirm-password');
-    const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
-    
-    togglePasswordButton.addEventListener('click', function() {
-        togglePasswordVisibility(passwordInput, togglePasswordButton);
-    });
 
-    toggleConfirmPasswordButton.addEventListener('click', function() { // Added
-        togglePasswordVisibility(confirmPasswordInput, toggleConfirmPasswordButton);
-    });
-});
-
-function togglePasswordVisibility(inputField, toggleButton) {
-    const type = inputField.getAttribute('type') === 'password' ? 'text' : 'password';
-    inputField.setAttribute('type', type);
-    toggleButton.classList.toggle('fa-eye-slash');
-    toggleButton.classList.toggle('fa-eye');
-}
-
-    </script> 
+<script src="signup.js"></script>    
+   
 </body>
 
 </html>
