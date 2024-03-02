@@ -20,32 +20,32 @@
 
                 <div class="go-back">
                     <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-                    <a href="index.html">  <p> Go Back</p></a>
+                    <p> <span> Go Back </span></p>
                 </div>
 
                 <div class="input-container">
                     <h2 class="form-title">Log In</h2>
 
                     <div class="input-wrapper">
-                        <label for="email">Email *</label>
+                        <label for="email">Email </label>
                         <div class="input-div">
                             <input type="email" name="email" id="email"/>
                             <i class="fa-solid fa-envelope"></i>
                         </div>
-                        <p class="input-error" id="email-error">This field cannot be left blank!</p>
+                      
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="password">Password *</label>
+                        <label for="password">Password </label>
                         <div class="input-div">
                             <input type="password" name="password" id="password" />
                             <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
                         </div>
-                        <p class="input-error" id="password-error">This field cannot be left blank!</p>
+                       
                     </div>
 
                     <div class="submitBtn-container">
-                        <input type="submit" value="Login" onclick="validateForm(event)" >
+                        <input type="submit" value="Login" >
                     </div>
 
                     <div class="login-statement">
@@ -57,21 +57,6 @@
 
         </section>
     </main>
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const passwordInput = document.getElementById('password');
-            const togglePasswordButton = document.getElementById('togglePassword');
-
-            togglePasswordButton.addEventListener('click', function () {
-                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-                passwordInput.setAttribute('type', type);
-                togglePasswordButton.classList.toggle('fa-eye-slash');
-                togglePasswordButton.classList.toggle('fa-eye');
-            });
-        });
-
-    </script>
 </body>
 
 </html>
