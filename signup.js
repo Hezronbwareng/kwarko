@@ -102,13 +102,45 @@ form.addEventListener("submit", event => {
         })
         .then(data => {
             console.log(data);
+            // Display success message to the user
+            displaySuccessMessage("Registration successful!");
+            form.reset();
             // Redirect to another page upon successful form submission
-            window.location.href = "index.html"; 
+            setTimeout(() => {
+                // window.location.href = "index.html";
+            }, 3000); // Redirect after 3 seconds
         })
-        .catch(error => console.error(error));
+        .catch(error => {
+            console.error(error);
+            displayErrorMessage("Registration failed. Please try again.");
+        });
     }
 });
 
+function displaySuccessMessage(message) {
+    const successMessage = document.createElement("div");
+    successMessage.classList.add("success-message");
+    successMessage.textContent = message;
 
+    // Append success message to the form or any other suitable location
+    form.appendChild(successMessage);
 
+    // Remove the success message after a certain period of time
+    setTimeout(() => {
+        successMessage.remove();
+    }, 3000); // Remove after 3 seconds
+}
 
+function displayErrorMessage(message) {
+    const errorMessage = document.createElement("div");
+    errorMessage.classList.add("error-message");
+    errorMessage.textContent = message;
+
+    // Append error message to the form or any other suitable location
+    form.appendChild(errorMessage);
+
+    // Remove the error message after a certain period of time
+    setTimeout(() => {
+        errorMessage.remove();
+    }, 3000); // Remove after 3 seconds
+}
