@@ -1,0 +1,361 @@
+/* GLOBAL STYLING */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-white: #ffffff;
+    --primary-dark: #0d0b0b;
+    --primary-blue: #200e96;
+    --primary-grey: #d3d3d3d9;
+    --primary-darker-grey:#808080;
+    --primary-light-orange: #ff5100;
+    --primary-dark-orange: #e64900;
+
+    --secondary-white: #f3f5f6;
+    --secondary-blue: #007bff;
+    --secondary-grey: #f3f3f5;
+    --secondary-dark-grey: #222222;
+    --secondary-darker-grey: #dddddd;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: Rubik, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* STYLING THE HEADER */
+header {
+    color: #282424;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-white);
+    position: relative;
+}
+
+.toggle-button {
+    border: none;
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    z-index: 9;
+    background: transparent;
+
+}
+
+.logo img {
+    height: 55px;
+    padding: 10px 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--primary-dark);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-blue);
+}
+
+.nav-for-mobile{
+    display: none;
+}
+
+
+/*main section stylimg*/
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+#rentalList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.propertyCard {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.propertyCard:hover {
+    transform: translateY(-5px);
+}
+
+.propertyCard img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.propertyCard h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.propertyCard p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.propertyCard button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .propertyCard {
+        padding: 15px;
+    }
+
+    .propertyCard h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .propertyCard p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .propertyCard button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #rentalList {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .propertyCard {
+        padding: 10px;
+    }
+
+    .propertyCard h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .propertyCard p {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .propertyCard button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+/* styling the footer */
+
+footer {
+    width: 100%;
+    padding: 20px 0 10px;
+    background-color: var(--secondary-grey);
+}
+
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+.footer-links ul a {
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-dark);
+    transition: color 500ms ease;
+}
+
+.footer-links ul a:hover {
+    color: var(--primary-light-orange);
+}
+
+.footer-info {
+    font-size: 16px;
+    color: var(--secondary-blue);
+    font-weight: 800;
+}
+
+
+.social-icons i {
+    padding: 5px;
+    font-size: 22px;
+    margin-right: 8px;
+    transition: color 200ms ease;
+    color: var(--secondary-dark-grey);
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: var(--secondary-blue);
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+
+@media (max-width: 768px) {
+
+    header{
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        z-index:10;
+    } 
+
+    .nav-for-mobile {
+        position: fixed;
+        z-index: 5;
+        inset: 0 0 0 0;
+        opacity: 0.9;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 40px;
+        align-items: flex-start;
+        background-color: var(--secondary-darker-grey);
+        transform: translateX(-100%);
+        transition: 500ms ease;
+        
+    }
+
+    .nav-for-mobile li{
+        width:100%;
+    }
+
+    .nav-for-mobile li a{
+        width:100%;
+        display: block;
+        padding:5px;
+        border-bottom:2px solid;
+    }
+
+    .nav-for-mobile li a:hover{
+        color: var(--primary-light-orange);
+    }
+
+    .nav-for-mobile.active {
+        transform: translateX(0%);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .toggle-button {
+        display: block;
+        padding: 0px;
+    }
+    .advertise h2{
+        font-size: 28px;
+        margin-top: 55px;
+    }
+   
+
+    .footer-links ul {
+        gap: 10px;
+    }
+
+    .footer-info {
+        font-size: 15px;
+    }
+
+    .footer-links ul li a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:378px){
+    .text-section h2 {
+        font-size: 16px;
+    }
+
+    .text-section p {
+        font-size: 14px;
+    }
+
+    .footer-links ul li a{
+        font-size: 13px;
+    }
+
+    .footer-info{
+        font-size: 14px;
+    }
+
+}
