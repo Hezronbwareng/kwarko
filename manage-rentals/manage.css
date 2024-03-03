@@ -101,6 +101,9 @@ button {
 main {
     padding: 20px;
 }
+.tittle{
+    font-size: 30px;
+}
 
 #rentalList {
     display: grid;
@@ -151,7 +154,9 @@ main {
         padding: 10px;
     }
 
-    h1 {
+    .tittle {
+        margin-top: 60px;
+        text-align: center;
         font-size: 24px;
         margin-bottom: 10px;
     }
