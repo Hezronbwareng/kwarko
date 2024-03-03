@@ -330,6 +330,19 @@ footer {
     .loan-type h2{
         font-size: 16px;
     }
+    .loan-type p{
+        font-size: 12px;
+    }
+    .loan-type a {
+        
+        padding: 6px 10px;
+        font-size: 12px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
 
     .footer-links ul {
         gap: 10px;
