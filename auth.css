@@ -152,24 +152,24 @@ input[type="submit"]:hover {
 .login-statement a:hover {
     text-decoration: underline;
 }
-
 /* Style for success message */
 .success-message {
-    background-color: #dff0d8; /* Greenish background */
-    color: #3c763d; /* Dark green text */
+    background-color: #dff0d8; 
+    color: #3c763d; 
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #d0e9c6; /* Light green border */
+    border: 1px solid #d0e9c6; 
 }
 
 /* Style for error message */
 .error-message {
-    background-color: #f2dede; /* Reddish background */
-    color: #a94442; /* Dark red text */
+    background-color: #f2dede; 
+    color: #a94442; 
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ebccd1; /* Light red border */
+    border: 1px solid #ebccd1; 
 }
+
 
 /* RESPONSIVE DESIGN FOR MOBILE */
 @media screen and (max-width: 768px) {

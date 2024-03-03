@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwarko Help Center</title>
+    <!-- Link for CSS Styling -->
+    <link rel="stylesheet" href="help.css">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <button class="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="hidden">
+            <ul>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Home Loans</a></li>
+                <li><a href="#">Agent Finder</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/icons/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="hidden"><a href="#">Manage Rentals</a></li>
+                <li class="hidden"><a href="/advertise/advertise.html">Advertise</a></li>
+                <li class="hidden"><a href="">Help</a></li>
+                <li><a href="/login.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navigation bar for mobile -->
+    <nav>
+        <ul class="nav-for-mobile">
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Home Loans</a></li>
+            <li><a href="#">Agent Finder</a></li>
+            <li><a href="#">Manage Rentals</a></li>
+            <li><a href="/advertise/advertise.html">Advertise</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+  <!-- Main content -->
+<main>
+    <section class="help-center">
+        <h2>Welcome to Kwarko Help Center</h2>
+        <p>If you have any questions or need assistance, please check our FAQs below or contact us directly.</p>
+
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <button class="toggle-faq"><i class="fas fa-plus"></i></button>
+                <h4 class="question">How do I list my property for sale?</h4>
+                <p class="answer">To list your property for sale, navigate to the "Sell" section and follow the instructions to create a new listing.</p>
+            </div>
+            <div class="faq-item">
+                <button class="toggle-faq"><i class="fas fa-plus"></i></button>
+                <h4 class="question">Can I rent out my property through this platform?</h4>
+                <p class="answer">Yes, you can. Navigate to the "Rent" section and follow the instructions to list your property for rent.</p>
+            </div>
+            <div class="faq-item">
+                <button class="toggle-faq"><i class="fas fa-plus"></i></button>
+                <h4 class="question">How can I update my contact information?</h4>
+                <p class="answer">You can update your contact information by visiting your account settings and selecting the "Edit Profile" option.</p>
+            </div>
+            <div class="faq-item">
+                <button class="toggle-faq"><i class="fas fa-plus"></i></button>
+                <h4 class="question">What are the steps for buying a home?</h4>
+                <p class="answer">The steps for buying a home include: determining your budget, getting pre-approved for a mortgage, finding a real estate agent, searching for properties, making an offer, and closing the deal.</p>
+            </div>
+            <div class="faq-item">
+                <button class="toggle-faq"><i class="fas fa-plus"></i></button>
+                <h4 class="question">How do I find rental properties?</h4>
+                <p class="answer">You can find rental properties by searching online real estate platforms, working with a real estate agent, checking classified ads, or exploring rental listings in your desired area.</p>
+            </div>
+            <!-- Add more relevant FAQs here -->
+        </section>
+
+        <section class="contact-us">
+            <h3>Contact Us</h3>
+            <p>If you couldn't find the answer to your question in our FAQs, feel free to contact us directly via email or phone.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="help.html">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>&copy;<span id="currentYear"></span> Kwarko. All rights reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+        </div>
+    </footer>
+    <script src="help.js"></script>
+</body>
+
+</html>

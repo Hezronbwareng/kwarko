@@ -126,13 +126,13 @@ function displaySuccessMessage(message) {
     successMessage.classList.add("success-message");
     successMessage.textContent = message;
 
-    // Append success message to the form or any other suitable location
+    // Append success message to the form 
     form.appendChild(successMessage);
 
     // Remove the success message after a certain period of time
     setTimeout(() => {
         successMessage.remove();
-    }, 3000); // Remove after 3 seconds
+    }, 3000); 
 }
 
 function displayErrorMessage(message) {
@@ -140,11 +140,11 @@ function displayErrorMessage(message) {
     errorMessage.classList.add("error-message");
     errorMessage.textContent = message;
 
-    // Append error message to the form or any other suitable location
+    // Append error message to the form 
     form.appendChild(errorMessage);
 
     // Remove the error message after a certain period of time
     setTimeout(() => {
         errorMessage.remove();
-    }, 3000); // Remove after 3 seconds
+    }, 3000); 
 }
