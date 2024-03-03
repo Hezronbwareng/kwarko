@@ -337,12 +337,37 @@ footer {
         
         padding: 6px 10px;
         font-size: 12px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
+        
+    }
+    .loan-calculator {
+        padding: 50px 0;
+      
     }
 
+    .loan-calculator form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .loan-calculator label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }    
+    .testimonial p {
+        font-size: 13px ;
+    }
+    .faq{
+        padding-top: 5px;
+    }
+    .faq h2{
+        font-size: 18px ;
+    }
+    
+    
+    .faq-item h3 {
+        font-size: 14px;
+    }
 
     .footer-links ul {
         gap: 10px;
