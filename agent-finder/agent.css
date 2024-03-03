@@ -82,13 +82,104 @@ nav ul li a:hover {
 }
 
 /* styling the main content */
+/* Center the content vertically and horizontally */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Take remaining vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agent-finder {
+    padding: 20px;
+    background-color: #f3f5f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agent-finder h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.agent-finder form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.agent-finder label {
+    font-weight: bold;
+    width: 100%;
+}
+
+.agent-finder input[type="text"],
+.agent-finder select {
+    width: calc(50% - 5px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.agent-finder button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agent-finder button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.agent-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.agent-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.agent-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Footer styling
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    /* padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+} */ 
+
 
 
 /* styling the footer */
 
 footer {
+    margin-top: auto;
     width: 100%;
-    padding: 20px 0 10px;
+    padding: 20px 0;
     background-color: var(--secondary-grey);
 }
 
