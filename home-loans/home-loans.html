@@ -59,6 +59,87 @@
     </nav>
 
     <!-- The main section -->
+    <main>
+        <section class="loan-options">
+            <h1>Explore Our Home Loan Options</h1>
+            <div class="loan-types">
+                <div class="loan-type">
+                    <h2>Fixed-Rate Mortgage</h2>
+                    <p>Get peace of mind with a fixed interest rate for the entire loan term.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="loan-type">
+                    <h2>Adjustable-Rate Mortgage (ARM)</h2>
+                    <p>Take advantage of lower initial rates that adjust over time.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="loan-type">
+                    <h2>VA Loans</h2>
+                    <p>Exclusive loan options for veterans, active-duty service members, and eligible spouses.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="loan-type">
+                    <h2>FHA Loans</h2>
+                    <p>Low down payment options for first-time homebuyers and those with less-than-perfect credit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="loan-type">
+                    <h2>Jumbo Loans</h2>
+                    <p>Finance your dream home with a loan that exceeds conforming loan limits.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="loan-calculator">
+            <h2>Mortgage Calculator</h2>
+            <form id="mortgage-form">
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" name="loan-amount" placeholder="Enter loan amount" required>
+                
+                <label for="interest-rate">Interest Rate:</label>
+                <input type="text" id="interest-rate" name="interest-rate" placeholder="Enter interest rate" required>
+                
+                <label for="loan-term">Loan Term (months):</label>
+                <input type="number" id="loan-term" name="loan-term" placeholder="Enter loan term in months (minimum 6 months)" min="6" required>
+                
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="mortgage-result"></div>
+        </section>
+    
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"I couldn't be happier with my home loan from Kwarko. The process was smooth, and the rates were competitive. Highly recommended!"</p>
+                <p>- Caroline Mueni</p>
+            </div>
+            <div class="testimonial">
+                <p>"Kwarko made buying my first home a breeze. Their team was supportive and guided me through every step of the process. Thank you!"</p>
+                <p>- Tylor Johnson </p>
+            </div>
+            <div class="testimonial">
+                <p>"I'm extremely satisfied with Kwarko's services. They made my home buying experience stress-free!"</p>
+                <p>- Emily </p>
+            </div>
+        </section>
+    
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What documents do I need to apply for a home loan?</h3>
+                <p>Typically, you'll need documents such as proof of income, tax returns, bank statements, and identification.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the difference between a fixed-rate and adjustable-rate mortgage?</h3>
+                <p>A fixed-rate mortgage has a set interest rate for the entire loan term, while an adjustable-rate mortgage (ARM) has a rate that can change periodically.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I apply for a home loan with a low credit score?</h3>
+                <p>While a higher credit score improves your chances, some lenders offer options for borrowers with low credit scores.</p>
+            </div>
+        </section>
+    </main>
+    
     
 
     <!-- Footer section  -->

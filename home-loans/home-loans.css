@@ -82,13 +82,141 @@ nav ul li a:hover {
 }
 
 /* styling the main content */
+      /* Styling for Loan Options section */
+      .loan-options {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .loan-types {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .loan-type {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: calc(50% - 20px); /* Adjust width based on container width and gap */
+    }
+
+    .loan-type h2 {
+        margin-bottom: 10px;
+    }
+
+    .loan-type p {
+        color: #666;
+    }
+
+    .loan-type a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .loan-type a:hover {
+        background-color: #0056b3;
+    }
+
+    /* Styling for Mortgage Calculator section */
+    .loan-calculator {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .loan-calculator form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .loan-calculator label {
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .loan-calculator input[type="text"],
+    .loan-calculator input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .loan-calculator button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .loan-calculator button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Additional styling for Mortgage Calculator result */
+    #mortgage-result {
+        margin-top: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+
+
+/* Styling for Testimonials section */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+}
+
+/* Styling for FAQs section */
+.faq {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+}
+
 
 
 /* styling the footer */
 
 footer {
     width: 100%;
-    padding: 20px 0 10px;
+    padding: 20px 0 ;
+    margin-top: auto;
     background-color: var(--secondary-grey);
 }
 
@@ -196,40 +324,11 @@ footer {
         padding: 0px;
     }
 
-    .search-bar-container {
-        max-width: 350px;
+      .loan-options h1{
+        margin-top: 55px;
     }
-
-    .search-btn {
-        padding: 5px 20px;
-    }
-
-    .home-recommendations {
-        justify-content: flex-start;
-        gap:20px;
-        margin-left: 20px;
-    }
-
-    .text-section {
-        width: 300px;
-        padding: 5px;
-    }
-
-    .text-section h2 {
-        font-size: 20px;
-    }
-
-    .text-section p {
-        font-size: 15px;
-    }
-
-    .image-container {
-        flex-direction: column;
-        margin-right: 20px;
-    }
-
-    .card-container {
-        flex-direction: column;
+    .loan-type h2{
+        font-size: 16px;
     }
 
     .footer-links ul {
