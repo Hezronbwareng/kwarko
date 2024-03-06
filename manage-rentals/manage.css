@@ -135,7 +135,7 @@ main {
 }
 
 .propertyCard button:hover {
-    background-color: var(--primary-dark-blue);
+    background-color: var(--secondary-blue);
 }
 
 #addPropertyBtn {
