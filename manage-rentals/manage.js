@@ -20,14 +20,14 @@ togglebutton.addEventListener("click", () => {
 
 // Dummy data for rental properties (replace with real data from database)
 const rentalProperties = [
-  { id: 1, name: "Property 1", address: "123 Main St", price: 1500, image: "01.jpg" },
+  { id: 1, name: "Property 1", address: "123 Main St", price: 1500, image: "property1.jpg" },
   { id: 2, name: "Property 2", address: "456 Oak St", price: 2000, image: "property2.jpg" },
   { id: 3, name: "Property 3", address: "789 Elm St", price: 1800, image: "property3.jpg" },
-  { id: 4, name: "Property 3", address: "789 Elm St", price: 1800, image: "property3.jpg" },
-  { id: 5, name: "Property 3", address: "789 Elm St", price: 1800, image: "property3.jpg" },
-  { id: 6, name: "Property 3", address: "789 Elm St", price: 1800, image: "property3.jpg" },
-  { id: 7, name: "Property 3", address: "789 Elm St", price: 1800, image: "property3.jpg" },
-  { id: 8, name: "Property 3", address: "789 Elm St", price: 1800, image: "property3.jpg" }
+  { id: 4, name: "Property 3", address: "789 Elm St", price: 1800, image: "property4.jpg" },
+  { id: 5, name: "Property 3", address: "789 Elm St", price: 1800, image: "property5.jpg" },
+  { id: 6, name: "Property 3", address: "789 Elm St", price: 1800, image: "property6.jpg" },
+  { id: 7, name: "Property 3", address: "789 Elm St", price: 1800, image: "property7.jpg" },
+  { id: 8, name: "Property 3", address: "789 Elm St", price: 1800, image: "property8.jpg" }
 ];
 
 // Function to display rental properties
