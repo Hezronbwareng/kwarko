@@ -150,7 +150,7 @@ main {
 }
 
 #addPropertyBtn:hover {
-    background-color: var(--primary-dark-blue);
+    background-color: var(--secondary-blue);
 }
 
 /* Responsive styles */
