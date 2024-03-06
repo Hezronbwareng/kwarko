@@ -16,3 +16,16 @@ togglebutton.addEventListener("click", () => {
     togglebutton.style.color = "red";
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const searchBox = document.getElementById('search-box');
+  const searchBtn = document.querySelector('.search-btn');
+
+  searchBtn.addEventListener('click', function() {
+      const searchTerm = searchBox.value.trim();
+      if (searchTerm !== '') {
+          window.location.href = `listing.html?q=${encodeURIComponent(searchTerm)}`;
+      }
+  });
+});
