@@ -1,6 +1,3 @@
-function scrollToTop() {
-    window.scrollTo(0, 0);
-}
 
 /* SELECTING  HTML FORM  ELEMENTS  */
 const form = document.getElementById("register-form")

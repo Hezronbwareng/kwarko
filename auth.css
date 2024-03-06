@@ -51,15 +51,10 @@ body {
     top: 50%;
     left: -20px;
     transform: translateY(-50%);
-    color: #ed4c06;
+    color: #0644ed;
 }
 
-.go-back p {
-    margin: 0;
-}
-.go-back p span{
-    color: #ed4c06;
-}
+
 
 .form-title {
     margin-bottom: 10px;
