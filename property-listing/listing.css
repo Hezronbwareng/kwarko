@@ -1,0 +1,13 @@
+/* styles.css */
+.property {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.property img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
