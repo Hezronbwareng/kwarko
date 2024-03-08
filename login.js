@@ -1,20 +1,16 @@
-
 /* SELECTING  HTML FORM  ELEMENTS  */
-const form = document.getElementById("register-form")
+const form = document.getElementById("login-form")
 const emailEl = document.getElementById("email")
 const passwordEl = document.getElementById("password")
-const confirmPasswordEl = document.getElementById("confirm-password")
 const icons = document.querySelectorAll(".input-div i")
-
-
 
 /* SELECTING THE ERROR TEXT BOXES */
 const emailErrorBox = document.getElementById("email-error")
 const passwordErrorBox = document.getElementById("password-error")
-const confirmPasswordErrorBox = document.getElementById("confirm-password-error")
+
 
 /* ENDPOINT FOR POSTING DATA */
-const URL = "https://nyumba-api.onrender.com/api/users/register/"
+const URL = "https://nyumba-api.onrender.com/api/users/get_token/"
 
 /* PASSWORD VISIBILITY FEATURE */
 icons.forEach(icon => {
@@ -41,16 +37,14 @@ function hideErrorMessage(inputField, errorBox) {
 /* EVENT LISTENERS TO HIDE ERROR MESSAGES WHEN USER STARTS TYPING */
 emailEl.addEventListener("input", () => hideErrorMessage(emailEl, emailErrorBox));
 passwordEl.addEventListener("input", () => hideErrorMessage(passwordEl, passwordErrorBox));
-confirmPasswordEl.addEventListener("input", () => hideErrorMessage(confirmPasswordEl, confirmPasswordErrorBox));
 
 /* FUNCTION TO HANDLE FORM VALIDATION AND ERROR MESSAGES */
 function validateForm() {
     let isValid = true;
 
-    // Clear all error messages
+    /* Clear all error messages */
     emailErrorBox.textContent = "";
     passwordErrorBox.textContent = "";
-    confirmPasswordErrorBox.textContent = "";
 
     if (emailEl.value.trim() === "") {
         emailErrorBox.textContent = "Please fill in this field";
@@ -60,21 +54,14 @@ function validateForm() {
     if (passwordEl.value.trim() === "") {
         passwordErrorBox.textContent = "Please fill in this field";
         isValid = false;
-    } else if (passwordEl.value.length < 8) {
-        passwordErrorBox.textContent = "Password should contain more than 8 characters";
-        isValid = false;
-    }
-
-    if (confirmPasswordEl.value.trim() === "") {
-        confirmPasswordErrorBox.textContent = "Please fill in this field";
-        isValid = false;
-    } else if (passwordEl.value !== confirmPasswordEl.value) {
-        confirmPasswordErrorBox.textContent = "Passwords don't match";
-        isValid = false;
+    } else if(passwordEl.value.length < 8){
+        passwordErrorBox.textContent = "Password should contain more than 8 characters"
+        isValid = false
     }
 
     return isValid;
 }
+
 
 
 
@@ -84,14 +71,15 @@ form.addEventListener("submit", event => {
 
     if (validateForm()) {
         const formData = {
-            email: emailEl.value,
-            password: confirmPasswordEl.value
+            username:emailEl.value,
+            password:passwordEl.value
         };
 
         fetch(URL, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+
             },
             body: JSON.stringify(formData)
         })
@@ -103,17 +91,21 @@ form.addEventListener("submit", event => {
         })
         .then(data => {
             console.log(data);
-            // Display success message to the user
-            displaySuccessMessage("Registration successful!");
+
+            const token = localStorage.setItem("token", data.token)
+
+            /*Display success message to the user */
+            displaySuccessMessage(" Log in successful!");
             form.reset();
-            // Redirect to another page upon successful form submission
+
+            /* Redirect to another page after 3 second upon successful form submission */
             setTimeout(() => {
-                window.location.href = "login.html";
-            }, 3000); // Redirect after 3 seconds
+               window.location.href = "index.html";
+            }, 3000); 
         })
         .catch(error => {
             console.error(error);
-            displayErrorMessage("Registration failed. Please try again.");
+            displayErrorMessage("Log in  failed. Please try again.");
         });
     }
 });
@@ -123,10 +115,10 @@ function displaySuccessMessage(message) {
     successMessage.classList.add("success-message");
     successMessage.textContent = message;
 
-    // Append success message to the form 
+    /* Append success message to the form */
     form.appendChild(successMessage);
 
-    // Remove the success message after a certain period of time
+    /* Remove the success message after 3 seconds  certain period of time */
     setTimeout(() => {
         successMessage.remove();
     }, 3000); 
@@ -137,11 +129,11 @@ function displayErrorMessage(message) {
     errorMessage.classList.add("error-message");
     errorMessage.textContent = message;
 
-    // Append error message to the form 
+    /* Append error message to the form */
     form.appendChild(errorMessage);
 
-    // Remove the error message after a certain period of time
+    /* Remove the error message after a certain period of time */
     setTimeout(() => {
         errorMessage.remove();
-    }, 3000); 
+    }, 2000); 
 }
