@@ -95,40 +95,53 @@ nav ul li a:hover {
 
 /* Styling the search bar and its container */
 .search-bar-container {
-    width: 500px;
     display: flex;
-    border-radius: 10px;
-    justify-content: space-between;
-    background-color: var(--primary-grey);
+    justify-content: center;
+    align-items: center;
 }
 
 #search-box {
-    border: none;
+    flex: 1; /* Use flex to make search box and button take up equal space */
+    padding: 10px;
+    border: 2px solid #007bff; /* Added border for better visibility */
+    border-radius: 5px 0 0 5px; /* Uniform border radius */
     outline: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--primary-dark);
-    padding: 12px 0px 12px 20px;
-    background-color: transparent;
-}
-
-::placeholder {
-    color: var(--primary-dark);
 }
 
 .search-btn {
-    border: none;
-    outline: none;
-    font-size: 16px;
+    background-color: #007bff;
     color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
     cursor: pointer;
-    padding: 10px 35px;
-    border-radius: 10px;
-    background-color: var(--primary-light-orange);
+    transition: background-color 0.3s ease;
+    border: 2px solid #007bff; /* Added border for better visibility */
+    margin-left: -2px; /* Adjust to account for the border */
 }
 
 .search-btn:hover {
-    background-color: var(--primary-dark-orange);
+    background-color: #0056b3;
+}
+
+.fa-magnifying-glass {
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    #search-box {
+        width: calc(100% - 40px); /* Adjust width to accommodate button */
+        max-width: none;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border-bottom: 2px solid #007bff; /* Added bottom border for better visibility */
+        border-right: none; /* Remove right border on smaller screens */
+    }
+
+    .search-btn {
+        border-radius: 0 5px 5px 0; /* Adjust border radius for button */
+        margin-left: 0; /* Remove margin for smaller screens */
+    }
 }
 
 
@@ -340,15 +353,7 @@ footer {
         display: block;
         padding: 0px;
     }
-
-    .search-bar-container {
-        max-width: 350px;
-    }
-
-    .search-btn {
-        padding: 5px 20px;
-    }
-
+   
     .home-recommendations {
         justify-content: flex-start;
         gap:20px;
