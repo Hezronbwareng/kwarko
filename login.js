@@ -137,3 +137,8 @@ function displayErrorMessage(message) {
         errorMessage.remove();
     }, 2000); 
 }
+
+
+
+
+

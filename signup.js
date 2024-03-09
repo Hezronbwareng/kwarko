@@ -1,4 +1,3 @@
-
 /* SELECTING  HTML FORM  ELEMENTS  */
 const form = document.getElementById("register-form")
 const emailEl = document.getElementById("email")
@@ -78,6 +77,7 @@ function validateForm() {
 
 
 
+
 /* CODE TO HANDLE POSTING OF FORM DATA */
 form.addEventListener("submit", event => {
     event.preventDefault();
@@ -108,7 +108,7 @@ form.addEventListener("submit", event => {
             form.reset();
             // Redirect to another page upon successful form submission
             setTimeout(() => {
-                window.location.href = "login.html";
+                // window.location.href = "index.html";
             }, 3000); // Redirect after 3 seconds
         })
         .catch(error => {
@@ -145,3 +145,8 @@ function displayErrorMessage(message) {
         errorMessage.remove();
     }, 3000); 
 }
+
+
+
+
+
