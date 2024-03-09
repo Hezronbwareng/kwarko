@@ -92,16 +92,24 @@ form.addEventListener("submit", event => {
         .then(data => {
             console.log(data);
 
-            const token = localStorage.setItem("token", data.token)
+               // Save token to localStorage
+    const token = localStorage.setItem("token", data.token);
 
-            /*Display success message to the user */
-            displaySuccessMessage(" Log in successful!");
-            form.reset();
+    // Check if the logged-in user is an admin (replace this condition with your actual admin check logic)
+    if (data.isAdmin) {
+        // Redirect to the admin panel URL
+        window.location.href = "https://kwarko-admin-panel.vercel.app/";
+    } else {
+        // Display success message to the user
+        displaySuccessMessage("Log in successful!");}
 
-            /* Redirect to another page after 3 second upon successful form submission */
-            setTimeout(() => {
-               window.location.href = "index.html";
-            }, 3000); 
+        // Reset form
+        form.reset();
+
+        // Redirect to another page after 3 seconds upon successful form submission
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 3000); 
         })
         .catch(error => {
             console.error(error);
