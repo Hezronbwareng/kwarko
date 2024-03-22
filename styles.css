@@ -132,20 +132,12 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    #search-box {
-        width: calc(100% - 40px); /* Adjust width to accommodate button */
-        max-width: none;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border-bottom: 2px solid #007bff;
-        border-right: none; /* Remove right border on smaller screens */
-/*         height: 40px; /* Set height of search box */ */
+    .search-bar-container {
+        max-width: 350px;
     }
 
     .search-btn {
-        border-radius: 0 5px 5px 0; /* Adjust border radius for button */
-        margin-left: 0; /* Remove margin for smaller screens */
-/*         height: 30px; /* Set height of search button */ */
+        padding: 5px 20px;
     }
 }
 
