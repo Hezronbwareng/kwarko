@@ -136,13 +136,13 @@ nav ul li a:hover {
         border-radius: 5px;
         border-bottom: 2px solid #007bff;
         border-right: none; /* Remove right border on smaller screens */
-        height: 40px; /* Set height of search box */
+/*         height: 40px; /* Set height of search box */ */
     }
 
     .search-btn {
         border-radius: 0 5px 5px 0; /* Adjust border radius for button */
         margin-left: 0; /* Remove margin for smaller screens */
-        height: 30px; /* Set height of search button */
+/*         height: 30px; /* Set height of search button */ */
     }
 }
 
