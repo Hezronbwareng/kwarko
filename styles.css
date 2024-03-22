@@ -95,37 +95,40 @@ nav ul li a:hover {
 
 /* Styling the search bar and its container */
 .search-bar-container {
+    width: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: var(--primary-grey);
 }
 
 #search-box {
-    flex: 1; /* Use flex to make search box and button take up equal space */
-    padding: 10px;
-    border: 2px solid #007bff; /* Added border for better visibility */
-    border-radius: 5px 0 0 5px; /* Uniform border radius */
+    border: none;
     outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-dark);
+    padding: 12px 0px 12px 20px;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: var(--primary-dark);
 }
 
 .search-btn {
-    background-color: #007bff;
-    color: white;
     border: none;
-    border-radius: 0 5px 5px 0;
-    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: 2px solid #007bff; /* Added border for better visibility */
-    margin-left: -2px; /* Adjust to account for the border */
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: var(--primary-light-orange);
 }
 
 .search-btn:hover {
-    background-color: #0056b3;
-}
-
-.fa-magnifying-glass {
-    font-size: 1.2em;
+    background-color: var(--primary-dark-orange);
 }
 
 @media (max-width: 768px) {
